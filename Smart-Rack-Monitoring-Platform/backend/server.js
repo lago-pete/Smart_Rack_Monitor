@@ -12,8 +12,7 @@ const jwt = require('jsonwebtoken');
 const isCI = process.env.CI === 'true';
 const PORT = process.env.PORT || 8080;
 const JWT_SECRET = process.env.JWT_SECRET || 'sense-telecso';
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/sensorDB';
-
+const MONGO_URI = process.env.MONGO_URI;
 // --------------------
 // MongoDB Connection
 // --------------------
